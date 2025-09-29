@@ -6,4 +6,4 @@ This project contains a couple of exercises
 
 ## Student 
 
-- Amine, Benali
+- Amine Benali
