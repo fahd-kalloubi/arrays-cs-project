@@ -25,6 +25,10 @@ class Student {
         this(id, name, age);
         this.grade = grade;
     }
+    @Override
+    public int compare(Object[] o1,Object[] o2) {
+
+    }
 
     // Getters / setters
     public int getId() { return id; }
@@ -43,5 +47,8 @@ class Student {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", grade=" + grade + '}';
+    }
+
+
     }
 }
