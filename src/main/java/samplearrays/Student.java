@@ -3,7 +3,7 @@ package samplearrays;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Student {
+public class Student implements Comparable<Student> {
     private int id;
     private String name;
     private int age;
@@ -17,6 +17,10 @@ class Student {
         this.name = name;
         numStudent++;
     }
+    @Override
+    public int compareTo(Student a) {
+        return Integer.compare(this.grade,a.grade);
+    }
     public Student(int id, String name, int age) {
         this(id, name);
         this.age = age;
@@ -25,6 +29,7 @@ class Student {
         this(id, name, age);
         this.grade = grade;
     }
+
 
     // Getters / setters
     public int getId() { return id; }
@@ -44,4 +49,7 @@ class Student {
                 ", age=" + age +
                 ", grade=" + grade + '}';
     }
-}
+
+
+    }
+
